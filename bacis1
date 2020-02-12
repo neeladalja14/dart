@@ -1,0 +1,97 @@
+/* this is the first code in dart, basic code. */
+
+void main(){
+  int x = 23;
+  bool student = true;
+  var name = "Neel";
+  double kick = 2.4;
+  
+  const name2 = "people";
+  print(x);
+  x=42;
+  print(x);
+  print(name);
+  print(kick);
+  print(student);
+  print(name2);
+  
+}
+/*......................*/
+
+void main(){
+
+  int x = 23;
+  int y = 43;
+  
+  print(x+y);
+  
+  
+  
+  String name1 = "tim";
+  String name2 = "george";
+  
+  print("$name1 $name2 says hi!");
+  
+  /*......................*/
+  
+  bool birthday = true;
+  
+  if(birthday == true){
+    print("happy birthday to you :)");
+  }
+}
+
+
+/*.....this is how methods are written...........*/
+
+void main(){
+  sayHi("tim");
+  sayHi("george");
+  add(2, 6);
+}
+
+void sayHi(String names){
+  print(names);
+}
+
+
+void add(int x, int y){
+  print(x+y);
+
+}
+
+
+/*.....with return......*/
+
+void main(){
+  print(add(4,3) + 4);
+}
+
+int add(int x, int y){
+  return x + y;
+}
+        
+
+
+/*....fat arrow method....*/
+void main() => print(add(1,5) + 4);
+int add(int x, int y) => x+y;
+
+
+/*........this is how list works is made in Dart..........*/
+
+void main(){
+  List<int> myList = [4,5,6];
+  print(myList[2]);
+  
+  List<String> striList = ["tim", "george", "hella"];
+  print(striList[1]);
+  
+  List<dynamic> dynaList = [true, 45, "sarah"];
+  print(dynaList[0]);
+ 
+
+}
+
+
+/*.............*/
