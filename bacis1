@@ -94,4 +94,99 @@ void main(){
 }
 
 
-/*.............*/
+/*......this code how calsses are made in dart.......*/
+
+void main(){
+  
+  var dog = pet();
+  dog.name = "jim";
+  dog.age = 4;
+  
+  print(dog.name);
+  print(dog.age);
+  
+  var cat = pet();
+  cat.name = "bill";
+  cat.age = 3;
+  
+  print(cat.name);
+  print(cat.age);
+}
+
+class pet{
+  
+  String name;
+  int age;
+}
+
+/*........this is constructor in dart.........*/
+
+void main(){
+  
+  var dog = Pet("tim", 12);
+  var cat = Pet("golu", 10);
+  
+  print(dog.name);
+  print(dog.age);
+  print(cat.name);
+  print(cat.age);
+  dog.bark();  
+}
+
+class Pet{
+  String name;
+  int age;
+  
+  /*this is a way of writing a constructor.
+  Pet(String name, int age){
+    this.name = name;
+    this.age = age;
+  }*/
+  
+  
+  /*this is anoter way of writing a constructor.*/
+  
+  Pet(this.name, this.age);
+  
+  void bark(){
+  print("wuff wuff");
+  }
+}
+
+/*....this is how to overload methid in a class.......*/
+
+void main(){
+  
+  var lessie = Pet();
+  lessie.name = "lessie";
+  print(lessie.age);
+  lessie.hasBirthday();
+  
+  
+}
+
+class Pet extends Animal{
+  String name;
+ 
+  void hasBirthday(){
+    super.hasBirthday();
+    print(name);
+  }
+}
+
+class WildLifeAnimal extends Animal{
+  
+}
+
+class Animal{
+  int age;
+  
+  void hasBirthday(){
+    print("happt bday");
+  }
+}
+
+
+
+/*......maps.......*/
+
