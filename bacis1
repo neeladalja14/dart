@@ -190,3 +190,23 @@ class Animal{
 
 /*......maps.......*/
 
+void main(){
+  
+  Map<String, int> persons = {
+    "Tim": 42,
+    "sarah": 71,
+    "boi": 45
+  };
+  print(persons["Tim"]);
+  
+  
+  Map<String, dynamic> list = {
+    "Tim": "student",
+    "sarah": 71,
+    "boi": true
+  };
+  print(list["boi"]);
+}
+
+/*......................*/
+
